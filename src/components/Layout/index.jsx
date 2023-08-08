@@ -1,9 +1,17 @@
 import * as S from "./styles"
 
-export function Layout() {
+import { Header } from "../Header"
+import { Main } from "../Main"
+import { Footer } from "../Footer"
+
+export function Layout({ handleTheme }) {
   return (
     <S.Container>
-      <p>aqui vai o header</p>
+      <S.Wrapper>
+        <Header handleTheme={handleTheme} />
+        <Main />
+        <Footer />
+      </S.Wrapper>
     </S.Container>
   )
 }

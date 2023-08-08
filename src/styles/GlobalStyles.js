@@ -13,13 +13,12 @@ export default createGlobalStyle`
 
     width: 100%;
     height: 100%;
+
+    background: ${({ theme }) => theme.colors.background};
   }
 
   body * {
     font-family: "Roboto" , sans-serif;
-  }
-
-  html {
-    background: #0101;
+    color: ${({ theme }) => theme.colors.textColor1};
   }
 `
