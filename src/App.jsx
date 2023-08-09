@@ -1,20 +1,17 @@
-import { useState } from "react"
+import { useContext } from "react"
+import { ThemeContext } from "./contexts/ThemeContext.jsx"
 
 import { ThemeProvider } from "styled-components"
 import GlobalStyles from "./styles/GlobalStyles.js"
-import themes from "./styles/themes/index.js"
 
 import { Layout } from "./components/Layout"
 
 export function App() {
-  const [theme, setTheme] = useState("dark")
+  const { theme } = useContext(ThemeContext)
 
-  const handleTheme = () => {
-    setTheme(prevState => (prevState === "dark" ? "light" : "dark"))
-  }
   return (
-    <ThemeProvider theme={themes[theme]}>
-      <Layout handleTheme={handleTheme} />
+    <ThemeProvider theme={theme}>
+      <Layout />
       <GlobalStyles />
     </ThemeProvider>
   )

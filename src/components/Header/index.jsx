@@ -1,7 +1,13 @@
+import { useContext } from "react"
+import { ThemeContext } from "../../contexts/ThemeContext"
+
 import * as S from "./styles"
+
 import { Sun } from "lucide-react"
 
-export function Header({ handleTheme }) {
+export function Header() {
+  const { toggleTheme } = useContext(ThemeContext)
+
   return (
     <S.Container>
       <img
@@ -12,7 +18,7 @@ export function Header({ handleTheme }) {
       <h1>Matheus Vespasiano</h1>
       <p>@m.vespasiano04</p>
 
-      <button onClick={handleTheme}>
+      <button onClick={toggleTheme}>
         <Sun />
       </button>
     </S.Container>

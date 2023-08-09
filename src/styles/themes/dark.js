@@ -1,4 +1,5 @@
 export default {
+  name: "dark",
   colors: {
     background: "#1F000B",
     primaryColor: "#D6336C",
