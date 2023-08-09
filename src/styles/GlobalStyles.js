@@ -15,6 +15,7 @@ export default createGlobalStyle`
     height: 100%;
 
     background: ${({ theme }) => theme.colors.background};
+    transition: background  300ms;
   }
 
   body * {

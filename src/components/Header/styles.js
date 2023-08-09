@@ -43,12 +43,12 @@ export const Container = styled.header`
     border-radius: 6px;
 
     cursor: pointer;
-    transition: background 200ms;
+    transition: background 300ms;
 
     > svg,
     path {
       stroke: ${({ theme }) => theme.colors.background};
-      transition: stroke 200ms;
+      transition: stroke 300ms;
     }
   }
 `
