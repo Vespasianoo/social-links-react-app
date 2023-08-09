@@ -4,14 +4,12 @@ import { Header } from "../Header"
 import { Main } from "../Main"
 import { Footer } from "../Footer"
 
-export function Layout({ handleTheme }) {
+export function Layout() {
   return (
     <S.Container>
-      <S.Wrapper>
-        <Header handleTheme={handleTheme} />
-        <Main />
-        <Footer />
-      </S.Wrapper>
+      <Header />
+      <Main />
+      <Footer />
     </S.Container>
   )
 }

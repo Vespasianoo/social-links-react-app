@@ -4,7 +4,6 @@ export const Container = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 48px;
 
   > img {
     width: 100px;
@@ -18,6 +17,7 @@ export const Container = styled.header`
     color: ${({ theme }) => theme.colors.textColor1};
     font-size: 32px;
     font-weight: 600;
+    text-align: center;
   }
   > p {
     color: ${({ theme }) => theme.colors.textColor1};

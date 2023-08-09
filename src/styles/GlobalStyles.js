@@ -5,6 +5,9 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
   }
 
   html, body, #root {
@@ -20,6 +23,6 @@ export default createGlobalStyle`
 
   body * {
     font-family: "Roboto" , sans-serif;
-    color: ${({ theme }) => theme.colors.textColor1};
+    color: ${({ theme }) => theme.colors.text};
   }
 `
