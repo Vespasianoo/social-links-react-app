@@ -11,7 +11,10 @@ export const Container = styled.main`
       > a {
         display: flex;
         justify-content: center;
+        align-items: center;
+        gap: 12px;
         width: inherit;
+        height: 50px;
         padding-block: 16px;
 
         background: ${({ theme }) => theme.colors.primaryColor};
@@ -19,10 +22,14 @@ export const Container = styled.main`
 
         font-size: 14px;
         font-weight: 700;
-        line-height: 150%;
         text-transform: uppercase;
 
         transition: background 300ms;
+
+        > svg {
+          width: 20px;
+          height: 20px;
+        }
 
         &:hover {
           background: ${({ theme }) => theme.colors.primaryColorHover};
